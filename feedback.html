@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Feedback</title>
+        <style>
+        div.form{background-color:rgba(226, 227, 208, 0.402);
+            text-align:left;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            width:50%;
+            height: 100%;
+            border-radius: 5px;
+            border-color: black;
+            border-style: ridge;}
+
+        </style>
+        <link rel="stylesheet" href="Page style.css"/>
+    </head>
+
+    <body>
+        <div class="goBack">
+            <a href="Contact us.html" > 
+                <img src="row1.jpg" alt="Back" height="30px" width="30px" />
+                Back
+            </a><br/>
+        </div>
+
+        <div class="form">
+        <h2>Support center</h2>
+        <form action="https://httpbin.org/get" method="get" >
+        Name:           <input name="name" type="text"/><br/><br/>
+        Phone Number:   <input name="phone" type="text" maxlength="8"/><br/><br/>
+        Age:            <input name="Age" type="text" maxlength="2"/>  <br/><br/>
+        <p>Gender:
+            <select name="gender" size="1">
+                <option>Female</option>
+                <option>Male</option>
+            </select>
+        </p>
+
+        <p>Financial status:
+                <select name="Fin-Status" size="1">
+                    <option>Student</option>
+                    <option>Employee</option>
+                    <option>Retired</option>
+                    <option>Laid off</option>
+                    <option>Other</option>
+                </select>
+        </p>
+
+
+        <textarea rows="5" cols="70">Type your feedback here</textarea> <br/><br/>
+        what you prefer to contact with you ?<br/>
+        <input name="c" type="checkbox" value="m" checked="checked"/>Email 
+        <input name="c" type="checkbox" value="f"/>Mobile Number<br/><br/>
+                                  
+        Rate your experience with FUNDLY website:<br/>
+            <input name="S" type="radio" value="1" /> 1
+            <input name="S" type="radio" value="2"/>  2
+            <input name="S" type="radio" value="3"/>  3
+            <input name="S" type="radio" value="4"/>  4
+            <input name="S" type="radio" value="5"/>  5
+
+            <br/><br/>
+        <input name="Reset" type="reset" />  
+        <input type="submit" value="Submit Form"/>
+
+        </form>
+        </div>
+    </body>
+
+</html>

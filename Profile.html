@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Profile</title>
+        <style>
+        div.log{background-color:rgba(226, 227, 208, 0.402);;
+            text-align:center;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            width:30%;
+            height: 52%;
+            border-radius: 5px;
+            border-color: black;
+            border-style: ridge;}
+
+        </style>
+        <link rel="stylesheet" href="Page style.css"/>
+    </head>
+
+    <body>
+        <div class="goBack">
+            <a href="User Dashboard.html" > 
+                <img src="row1.jpg" alt="Back" height="30px" width="30px" />
+                Back
+            </a><br/>
+        </div>
+
+        <div>
+            <table border="border" width="50%" cellpadding = "12" style="background-color: rgb(187, 211, 145);">
+                <tr> 
+                <td>  
+                <p style="font: bold;font-size: large;font-weight: bold;text-align: center;">User Information </p>
+                <form action="" method="get">
+                    Name:   <input name="Name" type="text" size="15" maxlength="15" />  <br/>
+                    Gender: <input name="gender" type="radio" value="m" checked="checked"/>Male 
+                            <input name="gender" type="radio" value="f"/>Female<br/>
+                    Age: <input name="Age" type="text" maxlength="2"/>  <br/> 
+                    Marital Status: <input name="Status1" type="radio" value="s" checked="checked"/>Single 
+                                    <input name="Status1" type="radio" value="mar" />Married
+                                    <input name="Status1" type="radio" value="ot" />Others <br/>
+                    Financial status: <input name="Status2" type="radio" value="st" checked="checked"/> Student
+                                      <input name="Status2" type="radio" value="em"/>  Employee
+                                      <input name="Status2" type="radio" value="rt"/>  Retired
+                                      <input name="Status2" type="radio" value="ld"/>  Laid off
+                                      <input name="Status2" type="radio" value="oth"/>  Other<br/>
+                    Password : <input name="password" type="password" maxlength="8"/>  <br/>
+                    <br/> <input name="Reset" type="reset" />  
+                    <input type="submit" value="Submit Form"/>
+                </form>
+                </td> 
+                </tr>
+                </table>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,784 @@
+<html>
+<head>
+  <title>Expense Tracker</title>
+    <Style>
+    div.Definition{background-color: rgba(226, 227, 208, 0.402);
+                   width:100%;
+                    height: 50%;
+                    margin:40px;
+                    border-radius: 5px;
+                    border-style: none;}
+
+    div.main{background-color:rgba(226, 227, 208, 0.402);
+            width:100%;
+            height: 65%;
+            margin:40px;
+            border-radius: 5px;
+            border-style: none;}
+
+    .line{font-family:Georgia, 'Times New Roman', Times, serif;
+                  font-size: 13px;
+                  font-weight: lighter;
+                  font-style: normal;
+                  text-decoration: none;
+                  letter-spacing: 2px;}
+    dt{font-weight: bolder;}
+    tr{background-color: rgb(114, 124, 96);}
+
+   </Style>
+   <link rel="stylesheet" href="Page style.css"/>
+  
+  
+</head>
+
+<body>
+    <div class="head">
+        <img src="22.png"  height="270px" width="270px" style="margin-right:0;margin-left: 1cm;float: left;margin-top: 0;" alt=""/> 
+        <h1 style="color:antiquewhite;font-size: 1in;text-align: left;padding-top: 1cm;padding-bottom: 0;"> Expense Tracker</h1>
+        <h6 id="Small" >Tracking your expenses helps identify areas where you can save <br/>
+                         Your Money on Your Terms
+        </h6>
+    </div>
+
+    <div class="content">
+        <p id="center">
+            <img src="content.jpg"  height="79px" width="140px" style="margin-right:1cm;margin-left: 3cm;float: left;"alt=""/> 
+            <ul type="square">
+                <li style="margin-bottom: 0px;text-align: left;" > <a href="#1">Definition of Expense Tracker</a> </li>
+                <li style="margin-bottom: 0px;text-align: left;" ><a href="#2">Key Features of Expense Trackers</a></li>
+                <li style="margin-bottom: 0px;text-align: left;" ><a href="#3"> Weekly expense</a></li>
+                <li style="margin-bottom: 0px;text-align: left;" > <a href="#4"> Monthly expense</a></li>
+            </ul>
+        </p>
+    </div>
+    
+    <div class="Definition">
+        <h6 id="1"></h6>
+        <h2 >What is Expense Tracker ?</h2>
+        <pre class="line"> <img src="expense.png" alt="" style="float: right; margin-right: 2cm;margin-bottom: 2cm;width: 2in; ;height: 2in;margin-left: 2cm;"/>
+        An expense tracker is a tool or application designed to help individuals, households, or businesses monitor 
+        and manage their financial expenditures. By systematically recording and categorizing expenses, these trackers 
+        offer a clear view of where money is being spent and help users make more informed financial decisions.
+        
+        The primary goal of an expense tracker is to give users a detailed insight into their spending habits, 
+        allowing them to identify areas where they might be overspending or where they can cut costs. 
+        Whether you are trying to stick to a monthly budget, save for a big purchase, or simply become more 
+        aware of your financial habits, an expense tracker is an invaluable tool.
+        </pre>
+        <br/>
+    </div>
+
+    <div class="main">
+        <h6 id="2"></h6>
+        <h2>Key Features of Expense Trackers:</h2>
+        <blockquote class="line">
+            <dl>
+                <dt>Expense Input:</dt>
+                <dd>Users can log their daily, weekly, or monthly expenses, including details like the amount, category (e.g., food, housing, entertainment), and payment method.</dd>
+                <br/>
+
+                <dt>Categorization:</dt>
+                <dd>Expenses are organized into categories (like transportation, food, bills), helping users understand where their money goes.</dd>
+                <br/>
+
+                <dt>Budgeting:</dt>
+                <dd> Many expense trackers allow users to set spending limits for different categories and compare actual spending against budgeted amounts.</dd>
+                <br/>
+
+                <dt>Visualization: </dt>
+                <dd>Most trackers offer graphs and charts that visually represent spending patterns, making it easier to identify trends and areas for improvement.</dd>
+                <br/>
+
+                <dt>Reports:</dt>
+                <dd>Expense trackers often generate detailed reports, summarizing spending over a certain period (weekly, monthly, or yearly).</dd>
+                <br/>
+
+                <dt>Reminders:</dt>
+                <dd>Some trackers can send alerts for upcoming bills or remind users to record their expenses regularly.</dd>
+            </dl>
+            </blockquote>
+    </div>
+    <hr/>
+
+    <div>
+        <h6 id="3"></h6>
+        <h2>Weekly Expense Trackers</h2>
+        <h4>Here you find a weekly expense per month , kindly fill all details</h4>
+        <form action="/submit" method="POST">
+            <table border="border">
+                <tr>
+                    <th>Expense Category Dropdown</th>
+                    <th colspan="2">Food</th>
+                    <th colspan="2">Transportation</th>
+                    <th colspan="2">Family</th>
+                    <th colspan="2">Phone Bills</th>
+                    <th colspan="2">Entertainment</th>
+                    <th colspan="2">Others</th>
+                </tr>
+                <tr>
+                    <th>Details</th>
+                    <th>Expense Amount</th>
+                    <th>Expense Frequency </th> 
+                    <th>Expense Amount</th>
+                    <th>Expense Frequency </th> 
+                    <th>Expense Amount</th>
+                    <th>Expense Frequency </th> 
+                    <th>Expense Amount</th>
+                    <th>Expense Frequency </th> 
+                    <th>Expense Amount</th>
+                    <th>Expense Frequency </th> 
+                    <th>Expense Amount</th>
+                    <th>Expense Frequency </th> 
+                </tr>
+                <tr>
+                    <th>Day1</th>
+                    <td><input type="text" name="cc1" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc2" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc3" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc4" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc5" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc6" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc7" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc8" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc9" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc10" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc11" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc12" maxlength="6" size="7" style="border: 0ch;"/></td>
+                </tr>
+
+                <tr>
+                    <th>Day2</th>
+                    <td><input type="text" name="cc13" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc14" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc15" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc16" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc17" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc18" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc19" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc20" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc21" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc22" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc23" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc24" maxlength="6" size="7" style="border: 0ch;"/></td>
+                </tr>
+                <tr>
+                    <th>Day3</th>
+                    <td><input type="text" name="cc25" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc26" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc27" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc28" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc29" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc30" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc31" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc32" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc33" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc34" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc35" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc36" maxlength="6" size="7" style="border: 0ch;"/></td>
+                </tr>
+                <tr>
+                    <th>Day4</th>
+                    <td><input type="text" name="cc37" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc38" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc39" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc40" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc41" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc42" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc43" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc44" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc45" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc46" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc47" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc48" maxlength="6" size="7" style="border: 0ch;"/></td>
+                </tr>
+                <tr>
+                    <th>Day5</th>
+                    <td><input type="text" name="cc49" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc50" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc51" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc52" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc53" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc54" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc55" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc56" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc57" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc58" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc59" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc60" maxlength="6" size="7" style="border: 0ch;"/></td>
+                </tr>
+                <tr>
+                    <th>Day6</th>
+                    <td><input type="text" name="cc61" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc62" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc63" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc64" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc65" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc66" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc67" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc68" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc69" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc70" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc71" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc72" maxlength="6" size="7" style="border: 0ch;"/></td>
+                </tr>
+
+                <tr>
+                    <th>Day7</th>
+                    <td><input type="text" name="cc73" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc74" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc75" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc76" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc77" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc78" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc79" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc80" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc81" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc82" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc83" maxlength="6" size="7" style="border: 0ch;"/></td>
+                    <td><input type="text" name="cc84" maxlength="6" size="7" style="border: 0ch;"/></td>
+                </tr>
+                </table>
+                <br/><br/>
+                <input name="Reset" type="reset" />  
+                <input type="submit" value="Submit Form"/>
+                
+            </form>
+            
+    </div>
+    <hr/>
+
+
+
+    <div> 
+        <h2>Daily Expense Trackers</h2> 
+        <h6 id="4"></h6>
+        <h4>Here you find a daily expense per month , kindly fill all details</h4>
+        <form action="/submit" method="POST">
+        <table border="border">
+            <tr>
+                <th>Expense Category Dropdown</th>
+                <th colspan="2">Food</th>
+                <th colspan="2">Transportation</th>
+                <th colspan="2">Family</th>
+                <th colspan="2">Phone Bills</th>
+                <th colspan="2">Entertainment</th>
+                <th colspan="2">Others</th>
+            </tr>
+            <tr>
+                <th>Details</th>
+                <th>Expense Amount</th>
+                <th>Expense Frequency </th> 
+                <th>Expense Amount</th>
+                <th>Expense Frequency </th> 
+                <th>Expense Amount</th>
+                <th>Expense Frequency </th> 
+                <th>Expense Amount</th>
+                <th>Expense Frequency </th> 
+                <th>Expense Amount</th>
+                <th>Expense Frequency </th> 
+                <th>Expense Amount</th>
+                <th>Expense Frequency </th> 
+            </tr>
+            <tr>
+                <th>Day1</th>
+                <td><input type="text" name="c1" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c2" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c3" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c4" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c5" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c6" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c7" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c8" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c9" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c10" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c11" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c12" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+
+            <tr>
+                <th>Day2</th>
+                <td><input type="text" name="c13" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c14" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c15" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c16" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c17" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c18" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c19" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c20" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c21" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c22" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c23" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c24" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+            <tr>
+                <th>Day3</th>
+                <td><input type="text" name="c25" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c26" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c27" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c28" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c29" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c30" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c31" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c32" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c33" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c34" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c35" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c36" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+            <tr>
+                <th>Day4</th>
+                <td><input type="text" name="c37" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c38" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c39" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c40" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c41" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c42" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c43" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c44" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c45" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c46" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c47" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c48" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+            <tr>
+                <th>Day5</th>
+                <td><input type="text" name="c49" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c50" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c51" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c52" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c53" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c54" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c55" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c56" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c57" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c58" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c59" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c60" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+            <tr>
+                <th>Day6</th>
+                <td><input type="text" name="c61" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c62" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c63" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c64" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c65" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c66" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c67" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c68" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c69" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c70" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c71" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c72" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+
+            <tr>
+                <th>Day7</th>
+                <td><input type="text" name="c73" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c74" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c75" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c76" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c77" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c78" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c79" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c80" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c81" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c82" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c83" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c84" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+            <tr>
+                <th>Day8</th>
+                <td><input type="text" name="c85" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c86" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c87" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c88" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c89" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c90" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c91" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c92" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c93" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c94" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c95" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c96" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+
+            <tr>
+                <th>Day9</th>
+                <td><input type="text" name="c97" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c98" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c99" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c100" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c101" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c102" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c103" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c104" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c105" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c106" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c107" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c108" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+            <tr>
+                <th>Day10</th>
+                <td><input type="text" name="c109" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c110" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c111" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c112" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c113" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c114" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c115" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c116" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c117" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c118" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c119" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c120" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+
+            <tr>
+                <th>Day11</th>
+                <td><input type="text" name="c121" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c122" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c123" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c124" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c125" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c126" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c127" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c128" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c129" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c130" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c131" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c132" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+            <tr>
+                <th>Day12</th>
+                <td><input type="text" name="c133" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c134" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c135" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c136" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c137" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c138" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c139" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c140" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c141" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c142" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c143" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c144" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+
+            <tr>
+                <th>Day13</th>
+                <td><input type="text" name="c145" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c146" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c147" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c148" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c149" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c150" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c151" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c152" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c153" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c154" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c155" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c156" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr><tr>
+                <th>Day14</th>
+                <td><input type="text" name="c157" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c158" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c159" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c160" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c161" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c162" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c163" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c164" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c165" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c166" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c167" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c168" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+
+            <tr>
+                <th>Day15</th>
+                <td><input type="text" name="c169" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c170" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c171" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c172" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c173" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c174" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c175" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c176" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c177" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c178" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c179" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c180" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr><tr>
+                <th>Day16</th>
+                <td><input type="text" name="c181" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c182" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c183" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c184" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c185" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c186" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c187" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c188" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c189" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c190" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c191" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c192" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+
+            <tr>
+                <th>Day17</th>
+                <td><input type="text" name="c193" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c194" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c195" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c196" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c197" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c198" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c199" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c200" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c201" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c202" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c203" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c204" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr><tr>
+                <th>Day18</th>
+                <td><input type="text" name="c205" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c206" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c207" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c208" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c209" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c210" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c211" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c212" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c213" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c214" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c215" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c216" maxlength="6" size="7" style="border: 0ch;"/></td>
+                  
+            </tr>
+
+            <tr>
+                <th>Day19</th>
+                <td><input type="text" name="c217" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c218" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c219" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c220" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c221" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c222" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c223" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c224" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c225" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c226" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c227" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c228" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+            <tr>
+                <th>Day20</th>
+                <td><input type="text" name="c229" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c230" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c231" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c232" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c233" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c234" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c235" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c236" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c237" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c238" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c239" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c240" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+
+            <tr>
+                <th>Day21</th>
+                <td><input type="text" name="c241" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c242" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c243" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c244" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c245" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c246" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c247" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c248" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c249" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c250" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c251" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c252" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr><tr>
+                <th>Day22</th>
+                <td><input type="text" name="c253" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c254" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c255" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c256" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c257" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c258" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c259" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c260" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c261" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c262" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c263" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c264" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+
+            <tr>
+                <th>Day23</th>
+                <td><input type="text" name="c265" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c266" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c267" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c268" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c269" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c270" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c271" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c272" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c273" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c274" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c275" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c276" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr><tr>
+                <th>Day24</th>
+                <td><input type="text" name="c277" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c278" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c279" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c280" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c281" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c282" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c283" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c284" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c285" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c286" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c287" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c288" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+
+            <tr>
+                <th>Day25</th>
+                <td><input type="text" name="c289" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c290" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c291" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c292" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c293" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c294" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c295" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c296" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c297" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c298" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c299" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c300" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr><tr>
+                <th>Day26</th>
+                <td><input type="text" name="c301" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c302" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c303" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c304" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c305" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c306" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c307" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c308" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c309" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c310" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c311" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c312" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+
+            <tr>
+                <th>Day27</th>
+                <td><input type="text" name="c313" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c314" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c315" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c316" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c317" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c318" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c319" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c320" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c321" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c322" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c323" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c324" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr><tr>
+                <th>Day28</th>
+                <td><input type="text" name="c325" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c326" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c327" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c328" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c329" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c330" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c331" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c332" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c333" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c334" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c335" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c336" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+
+            <tr>
+                <th>Day29</th>
+                <td><input type="text" name="c337" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c338" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c339" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c340" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c341" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c342" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c343" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c344" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c345" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c346" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c347" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c348" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr><tr>
+                <th>Day30</th>
+                <td><input type="text" name="c349" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c350" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c351" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c352" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c353" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c354" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c355" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c356" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c357" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c358" maxlength="6" size="7" style="border: 0ch;"/></td>  
+                <td><input type="text" name="c359" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c360" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+
+            <tr>
+                <th>Day31</th>
+                <td><input type="text" name="c361" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c362" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c363" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c364" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c365" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c366" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c367" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c368" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c369" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c370" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c371" maxlength="6" size="7" style="border: 0ch;"/></td>
+                <td><input type="text" name="c372" maxlength="6" size="7" style="border: 0ch;"/></td>
+            </tr>
+        </table>
+        <br/><br/> <input name="Reset" type="reset" />  
+        <input type="submit" value="Submit Form"/>
+        </form>
+        
+
+    </div>
+
+    <a href="Inlinked html" id="1"></a>
+    <a href="Inlinked html" id="2"></a>
+    <a href="Inlinked html" id="3"></a>
+    <a href="Inlinked html" id="4"></a>
+    <hr/>
+
+    <div class="goBack">
+        <a href="home.html" > 
+            <img src="home.jpg" alt="Home Page" height="30px" width="30px" /> Home Page
+        </a><br/>
+        <pre style="color: rgb(5, 78, 5);font-style: italic;text-indent: 6in;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        Thank you for choosing FUNDLY–
+                                                                                                                                                      <span>Your partner in financial growth!</span>             </pre>
+    </div>
+
+    <div class="foot"><br/>
+        <h6 id="Small">fundly</h6>
+    </div>
+
+    
+</body>
+</html>

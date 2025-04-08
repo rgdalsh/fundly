@@ -1,0 +1,62 @@
+/*this style will be applied to the all pages*/
+
+div.head{background-image: url(PHOTO-4.jpg);
+        width:94%;
+        height: 41%;
+        margin:40px;
+        border-radius: 5px;
+        border-style: none;}
+
+div.foot{background-color: rgb(222, 198, 189);
+    background-image: url(PHOTO-4.jpg);
+    width:94%;
+    height: 10%;
+    float: left;
+    margin:40px;
+    border-radius: 5px;
+    border-style: none;}
+
+div.goBack{background-color: white;
+            width:94%;
+            height: 20%;
+           margin:40px;
+           border-radius: 5px;
+            border-style: none;}
+
+div.content{background-color:rgba(226, 227, 208, 0.402);;
+            text-align:center;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            width:94%;
+            height: 20%;
+            margin:40px;
+            border-radius: 5px;
+            border-color: black;
+            border-style: ridge;}
+
+a:link{color:black;}
+a:visited{color:brown;}
+a:hover{color:darkgreen}
+a:active{color:yellow}
+
+#small {color:antiquewhite;
+    text-align:end;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width:80%;}
+
+h2,h1{font-size: 0.35in;font-weight: bolder;margin: 40px;color: rgb(38, 71, 6);}
+
+pre span{color:rgb(152, 122, 45)}
+
+/*
+body{background-image: url(22.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed; 
+     margin: 0;
+     height: 100vh;
+    background-blend-mode: lighten;
+backface-visibility:inherit;}
+   */ 
