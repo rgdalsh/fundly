@@ -49,6 +49,54 @@ h2,h1{font-size: 0.35in;font-weight: bolder;margin: 40px;color: rgb(38, 71, 6);}
 
 pre span{color:rgb(152, 122, 45)}
 
+/* Navigation Menu Styling */
+.navbar {
+    background-color: rgb(24, 63, 36);
+    width: 250px; 
+    height: 100vh; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    padding-top: 20px; 
+    z-index: 1000; 
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: block; 
+    margin: 15px 0; 
+}
+
+.nav-links li a {
+    display: block;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    background-color: rgb(152, 122, 45);
+    color: #ffffff;
+}
+
+body {
+    margin-left: 260px; 
+}
+
+.content {
+    padding: 20px;
+}
+
 /*
 body{background-image: url(22.png);
      background-repeat: no-repeat;
