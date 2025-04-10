@@ -28,7 +28,36 @@
         td:first-child, th:first-child {
             border-left: none; /* Remove left border for the first column */
         }
-        
+        .navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links li {
+    padding: 10px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-links li a:hover {
+    background-color: #575757;
+}
+
 
      </style>
      <link rel="stylesheet" href="Page style.css"/>
